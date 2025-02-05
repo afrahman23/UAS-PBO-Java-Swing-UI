@@ -56,6 +56,7 @@ public class FormBuruh {
     }
 
 
+
     void table_load() {
         try {
             pst = con.prepareStatement("SELECT * FROM employees");
@@ -82,7 +83,7 @@ public class FormBuruh {
                 model.addRow(rowData);
             }
 
-            // 5. Set model ke JTablex`
+            // 5. Set model ke JTable
             table_1.setModel(model);
 
             // Tutup ResultSet dan PreparedStatement
@@ -90,7 +91,7 @@ public class FormBuruh {
             pst.close();
         } catch (SQLException e) {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(null, "Error loading table: " + e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error mengambil data dari MySQL: " + e.getMessage());
         }
     }
 
@@ -99,6 +100,16 @@ public class FormBuruh {
     public FormBuruh() {
         connect ();
         table_load();
+
+        // Start the timer to refresh the table every 5 seconds
+        Timer timer = new Timer(5000, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                table_load();
+            }
+        });
+        timer.start();
+
         btnSave.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
