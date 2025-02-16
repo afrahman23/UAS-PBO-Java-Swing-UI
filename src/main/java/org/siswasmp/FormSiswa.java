@@ -1,4 +1,4 @@
-package org.employment;
+package org.siswasmp;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -9,11 +9,16 @@ import java.sql.*;
 
 public class FormBuruh {
     private JTextField txtName;
-    private JTextField txtNikId;
-    private JComboBox cmbJabatan;
-    private JComboBox cmbJenisKelamin;
-    private JTextField txtAlamat;
-    private JComboBox cmbStatus;
+    private JTextField txtSiswaId;
+
+    private JComboBox<String> cmbPembayaran;
+    private JComboBox<String> cmbKelas;
+    private JComboBox<String> cmbJurusan;
+
+//    private JComboBox cmbPembayaran;
+//    private JComboBox cmbKelas;
+    private JTextField txtJumlah;
+//    private JComboBox cmbJurusan;
 
     private JButton btnSave;
     private JButton btnUpdate;
@@ -41,8 +46,8 @@ public class FormBuruh {
     {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employment", "root", "901n6@Allah");
-            System.out.println("Successs");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbProjectSiswa", "root", "901n6@Allah");
+            System.out.println("Sukses terhubung ke database");
         }
         catch (ClassNotFoundException ex)
         {
@@ -59,7 +64,7 @@ public class FormBuruh {
 
     void table_load() {
         try {
-            pst = con.prepareStatement("SELECT * FROM employees");
+            pst = con.prepareStatement("SELECT * FROM ProjectSiswa");
             ResultSet rs = pst.executeQuery();
 
             // 1. Buat model tabel kosong
@@ -114,32 +119,32 @@ public class FormBuruh {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String name,nik_id,jabatan_kerja,jenis_kelamin,alamat,status;
+                String name,siswa_id,jenis_pembayaran,nama_kelas,jumlah,jurusan;
                 name = txtName.getText();
-                nik_id = txtNikId.getText();
-                jabatan_kerja = cmbJabatan.getSelectedItem().toString();
-                jenis_kelamin = cmbJenisKelamin.getSelectedItem().toString();
-                alamat = txtAlamat.getText();
-                status = cmbStatus.getSelectedItem().toString();
+                siswa_id = txtSiswaId.getText();
+                jenis_pembayaran = cmbPembayaran.getSelectedItem().toString();
+                nama_kelas = cmbKelas.getSelectedItem().toString();
+                jumlah = txtJumlah.getText();
+                jurusan = cmbJurusan.getSelectedItem().toString();
 
 
                 try {
-                    pst = con.prepareStatement("insert into employees(name,nik_id,jabatan_kerja,jenis_kelamin,alamat,status)values(?,?,?,?,?,?)");
+                    pst = con.prepareStatement("insert into ProjectSiswa(name,siswa_id,jenis_pembayaran,nama_kelas,jumlah,jurusan)values(?,?,?,?,?,?)");
                     pst.setString(1, name);
-                    pst.setString(2, nik_id);
-                    pst.setString(3, jabatan_kerja);
-                    pst.setString(4, jenis_kelamin);
-                    pst.setString(5, alamat);
-                    pst.setString(6, status);
+                    pst.setString(2, siswa_id);
+                    pst.setString(3, jenis_pembayaran);
+                    pst.setString(4, nama_kelas);
+                    pst.setString(5, jumlah);
+                    pst.setString(6, jurusan);
                     pst.executeUpdate();
                     JOptionPane.showMessageDialog(null, "Data baru telah ditambahkan!");
 //                    table_load();
                     txtName.setText("");
-                    txtNikId.setText("");
-                    cmbJabatan.setSelectedIndex(-1);
-                    cmbJenisKelamin.setSelectedIndex(-1);
-                    txtAlamat.setText("");
-                    cmbStatus.setSelectedIndex(-1);
+                    txtSiswaId.setText("");
+                    cmbPembayaran.setSelectedIndex(-1);
+                    cmbKelas.setSelectedIndex(-1);
+                    txtJumlah.setText("");
+                    cmbJurusan.setSelectedIndex(-1);
                     txtName.requestFocus();
                 }
 
@@ -157,38 +162,38 @@ public class FormBuruh {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    String nik_id = txtId.getText();
+                    String siswa_id = txtId.getText();
 
-                    pst = con.prepareStatement("select name,nik_id,jabatan_kerja,jenis_kelamin,alamat,status from employees where nik_id = ?");
-                    pst.setString(1, nik_id);
+                    pst = con.prepareStatement("select name,siswa_id,jenis_pembayaran,nama_kelas,jumlah,jurusan from ProjectSiswa where siswa_id = ?");
+                    pst.setString(1, siswa_id);
                     ResultSet rs = pst.executeQuery();
 
                     if(rs.next()==true)
                     {
                         String name = rs.getString(1);
-                        String nik_id1 = rs.getString(2);
-                        String jabatan_kerja = rs.getString(3);
-                        String jenis_kelamin = rs.getString(4);
-                        String alamat = rs.getString(5);
-                        String status = rs.getString(6);
+                        String siswa_id1 = rs.getString(2);
+                        String jenis_pembayaran = rs.getString(3);
+                        String nama_kelas = rs.getString(4);
+                        String jumlah = rs.getString(5);
+                        String jurusan = rs.getString(6);
 
                         txtName.setText(name);
-                        txtNikId.setText(nik_id1);
-                        cmbJabatan.setSelectedItem(jabatan_kerja);
-                        cmbJenisKelamin.setSelectedItem(jenis_kelamin);
-                        txtAlamat.setText(alamat);
-                        cmbStatus.setSelectedItem(status);
+                        txtSiswaId.setText(siswa_id1);
+                        cmbPembayaran.setSelectedItem(jenis_pembayaran);
+                        cmbKelas.setSelectedItem(nama_kelas);
+                        txtJumlah.setText(jumlah);
+                        cmbJurusan.setSelectedItem(jurusan);
                     }
                     else
                     {
                         txtName.setText("");
-                        txtNikId.setText("");
-                        cmbJabatan.setSelectedIndex(-1);
-                        cmbJenisKelamin.setSelectedIndex(-1);
-                        txtAlamat.setText("");
-                        cmbStatus.setSelectedIndex(-1);
+                        txtSiswaId.setText("");
+                        cmbPembayaran.setSelectedIndex(-1);
+                        cmbKelas.setSelectedIndex(-1);
+                        txtJumlah.setText("");
+                        cmbJurusan.setSelectedIndex(-1);
 
-                        JOptionPane.showMessageDialog(null, "Tidak ditemukan data dengan NIK ID tersebut!");
+                        JOptionPane.showMessageDialog(null, "Tidak ditemukan data dengan ID Siswa tersebut!");
                     }
                 }
                 catch (SQLException e1)
@@ -200,31 +205,31 @@ public class FormBuruh {
         btnUpdate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String name,nik_id,jabatan_kerja,jenis_kelamin,alamat,status;
+                String name,siswa_id,jenis_pembayaran,nama_kelas,jumlah,jurusan;
                 name = txtName.getText();
-                nik_id = txtNikId.getText();
-                jabatan_kerja = cmbJabatan.getSelectedItem().toString();
-                jenis_kelamin = cmbJenisKelamin.getSelectedItem().toString();
-                alamat = txtAlamat.getText();
-                status = cmbStatus.getSelectedItem().toString();
+                siswa_id = txtSiswaId.getText();
+                jenis_pembayaran = cmbPembayaran.getSelectedItem().toString();
+                nama_kelas = cmbKelas.getSelectedItem().toString();
+                jumlah = txtJumlah.getText();
+                jurusan = cmbJurusan.getSelectedItem().toString();
 
                 try {
-                    pst = con.prepareStatement("update employees set name= ?,jabatan_kerja= ?,jenis_kelamin= ?,alamat= ?,status= ? where nik_id= ?");
+                    pst = con.prepareStatement("update ProjectSiswa set name= ?,jenis_pembayaran= ?,nama_kelas= ?,jumlah= ?,jurusan= ? where siswa_id= ?");
                     pst.setString(1, name);
-                    pst.setString(2, jabatan_kerja);
-                    pst.setString(3, jenis_kelamin);
-                    pst.setString(4, alamat);
-                    pst.setString(5, status);
-                    pst.setString(6, nik_id);
+                    pst.setString(2, jenis_pembayaran);
+                    pst.setString(3, nama_kelas);
+                    pst.setString(4, jumlah);
+                    pst.setString(5, jurusan);
+                    pst.setString(6, siswa_id);
                     pst.executeUpdate();
                     JOptionPane.showMessageDialog(null, "Data telah diupdate!");
 //                    table_load();
                     txtName.setText("");
-                    txtNikId.setText("");
-                    cmbJabatan.setSelectedIndex(-1);
-                    cmbJenisKelamin.setSelectedIndex(-1);
-                    txtAlamat.setText("");
-                    cmbStatus.setSelectedIndex(-1);
+                    txtSiswaId.setText("");
+                    cmbPembayaran.setSelectedIndex(-1);
+                    cmbKelas.setSelectedIndex(-1);
+                    txtJumlah.setText("");
+                    cmbJurusan.setSelectedIndex(-1);
                     txtName.requestFocus();
                 }
                 catch (SQLException e1)
@@ -237,20 +242,20 @@ public class FormBuruh {
         btnDelete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String snik_id;
-                snik_id = txtNikId.getText();
+                String ssiswa_id;
+                ssiswa_id = txtSiswaId.getText();
                 try {
-                    pst = con.prepareStatement("delete from employees where nik_id = ?");
-                    pst.setString(1, snik_id);
+                    pst = con.prepareStatement("delete from ProjectSiswa where siswa_id = ?");
+                    pst.setString(1, ssiswa_id);
                     pst.executeUpdate();
                     JOptionPane.showMessageDialog(null, "Data telah dihapus!");
 //                    table_load();
                     txtName.setText("");
-                    txtNikId.setText("");
-                    cmbJabatan.setSelectedIndex(-1);
-                    cmbJenisKelamin.setSelectedIndex(-1);
-                    txtAlamat.setText("");
-                    cmbStatus.setSelectedIndex(-1);
+                    txtSiswaId.setText("");
+                    cmbPembayaran.setSelectedIndex(-1);
+                    cmbKelas.setSelectedIndex(-1);
+                    txtJumlah.setText("");
+                    cmbJurusan.setSelectedIndex(-1);
                     txtName.requestFocus();
                 }
                 catch (SQLException e1)
@@ -260,4 +265,13 @@ public class FormBuruh {
             }
         });
     }
+
+
+        // TODO: place custom component creation code here
+        private void createUIComponents() {
+            cmbPembayaran = new JComboBox<>(new String[]{"Tunai", "Transfer"});
+            cmbKelas = new JComboBox<>(new String[]{"1A", "1B", "2A", "2B", "3A", "3B"});
+            cmbJurusan = new JComboBox<>(new String[]{"IPA", "IPS", "Bahasa"});
+        }
+
 }
