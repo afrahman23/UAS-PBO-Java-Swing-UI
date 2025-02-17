@@ -2,6 +2,7 @@ package org.siswasmp;
 
                 import javax.swing.*;
                 import javax.swing.table.DefaultTableModel;
+                import java.awt.*;
                 import java.awt.event.ActionEvent;
                 import java.awt.event.ActionListener;
                 import java.sql.*;
@@ -22,6 +23,10 @@ package org.siswasmp;
                     private DefaultTableModel tableModel;
                     private JTextField txtId;
                     private JScrollPane tebel1;
+                    private JButton PRINTButton;
+//                    private JPanel mainPanel;
+
+
 
                     public static void main(String[] args) {
                         JFrame frame = new JFrame("FormSiswa");
@@ -216,11 +221,26 @@ package org.siswasmp;
                                 }
                             }
                         });
+                        PRINTButton.addActionListener(new ActionListener() {
+                            @Override
+                            public void actionPerformed(ActionEvent e) {
+                                try {
+                                    table_1.print();
+                                } catch (Exception e1) {
+                                    e1.printStackTrace();
+                                }
+                            }
+                        });
                     }
 
                     private void createUIComponents() {
                         cmbPembayaran = new JComboBox<>(new String[]{"Tunai", "Transfer"});
                         cmbKelas = new JComboBox<>(new String[]{"1A", "1B", "2A", "2B", "3A", "3B"});
                         cmbJurusan = new JComboBox<>(new String[]{"IPA", "IPS", "Bahasa"});
+                    }
+
+                    public Component getMainPanel() {
+                        return utama;
+
                     }
                 }
