@@ -1,13 +1,21 @@
 package org.siswasmp;
 
+                import net.sf.jasperreports.engine.JasperCompileManager;
+                import net.sf.jasperreports.engine.JasperFillManager;
+                import net.sf.jasperreports.engine.JasperPrint;
+                import net.sf.jasperreports.view.JasperViewer;
+
                 import javax.swing.*;
                 import javax.swing.table.DefaultTableModel;
                 import java.awt.*;
                 import java.awt.event.ActionEvent;
                 import java.awt.event.ActionListener;
                 import java.sql.*;
+                import java.util.HashMap;
 
-                public class FormSiswa {
+
+
+public class FormSiswa {
                     private JTextField txtName;
                     private JTextField txtSiswaId;
                     private JComboBox<String> cmbPembayaran;
@@ -23,6 +31,7 @@ package org.siswasmp;
                     private DefaultTableModel tableModel;
                     private JTextField txtId;
                     private JScrollPane tebel1;
+                    private JButton cetakButton;
                     private JButton PRINTButton;
 //                    private JPanel mainPanel;
 
@@ -221,14 +230,84 @@ package org.siswasmp;
                                 }
                             }
                         });
-                        PRINTButton.addActionListener(new ActionListener() {
+
+
+//                        cetakButton.addActionListener(new ActionListener() {
+//                            @Override
+//                            public void actionPerformed(ActionEvent e) {
+//
+//                            }
+//                        });
+
+                        // Add ActionListener to the button
+                        cetakButton.addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
-                                try {
-                                    table_1.print();
-                                } catch (Exception e1) {
-                                    e1.printStackTrace();
-                                }
+//                                try{
+//                                    java.sql.Connection conn = (Connection)KoneksiDatabase.koneksiDB();
+//                                    String path = "src/javaapplication132/CetakKaryawan.jasper";
+//                                    HashMap<String, Object>  parameters = new HashMap<> ();
+//                                    JasperPrint print = JasperFillManager.fillReport(path, parameters, conn);
+//                                    JasperViewer viewer = new JasperViewer(print, false);
+//                                    viewer.setVisible(true);
+//                                }
+//                                catch (Exception ex) {
+//                                    ex.printStackTrace();
+//                                }
+try {
+    // Compile the .jrxml file to .jasper file
+    String jrxmlFilePath = "src/main/java/org/siswasmp/report.jrxml";
+    String jasperFilePath = "src/main/java/org/siswasmp/report.jasper";
+    JasperCompileManager.compileReportToFile(jrxmlFilePath, jasperFilePath);
+
+    // Establish a database connection
+//    java.sql.Connection conn = KoneksiDatabase.koneksiDB();
+
+    // Fill the report with data
+    HashMap<String, Object> parameters = new HashMap<>();
+    java.sql.Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbProjectSiswa", "root", "901n6@Allah");
+    JasperPrint print = JasperFillManager.fillReport(jasperFilePath, parameters, conn);
+
+    // Display the report
+    JasperViewer viewer = new JasperViewer(print, false);
+    viewer.setVisible(true);
+} catch (Exception ex) {
+    ex.printStackTrace();
+}
+
+//                                try {
+//                                    // Step 1: Load the compiled .jasper file
+//                                    // Path to your compiled .jasper file
+//                                    String jrxmlFilePath = "src/main/java/org/siswasmp/report.jrxml";
+//                                    // Path where the compiled .jasper file will be saved
+//                                    String jasperFilePath = "src/main/java/org/siswasmp//report.jasper";
+//
+//                                    // Compile the .jrxml file to .jasper file
+//                                    JasperCompileManager.compileReportToFile(jrxmlFilePath, jasperFilePath);
+//
+//                                    System.out.println("Report compiled successfully!");
+//
+//                                    // Step 2: Establish a database connection (if needed)
+//                                    Connection conn = DriverManager.getConnection(
+//                                            "jdbc:mysql://localhost:3306/dbProjectSiswa", "root", "901n6@Allah");
+//
+//                                    // Step 3: Fill the report with data
+//                                    HashMap<String, Object> parameters = new HashMap<>();
+//                                    parameters.put("ReportTitle", "Sample Report"); // Example parameter
+//
+//                                    JasperPrint jasperPrint = JasperFillManager.fillReport(jasperFilePath, parameters, conn);
+//
+//                                    // Step 4: Display or print the report
+//                                    JasperViewer viewer = new JasperViewer(jasperPrint, false); // Open the report in a viewer
+//                                    viewer.setVisible(true);
+//
+//                                    // Alternatively, print directly without showing the viewer:
+//                                    // JasperPrintManager.printReport(jasperPrint, true);
+//
+//                                } catch (Exception ex) {
+//                                    ex.printStackTrace();
+//
+//                                }
                             }
                         });
                     }

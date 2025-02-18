@@ -1,0 +1,1469 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+<title>Uses of Interface org.apache.commons.collections.Transformer (Apache Commons Collections 3.2.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.commons.collections.Transformer (Apache Commons Collections 3.2.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/collections/class-use/Transformer.html" target="_top">Frames</a></li>
+<li><a href="Transformer.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h2 title="Uses of Interface org.apache.commons.collections.Transformer" class="title">Uses of Interface<br>org.apache.commons.collections.Transformer</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.collections">org.apache.commons.collections</a></td>
+<td class="colLast">
+<div class="block">
+This package contains the interfaces and utilities shared across all the subpackages of this component.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.bag">org.apache.commons.collections.bag</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the
+<a href="../../../../../org/apache/commons/collections/Bag.html" title="interface in org.apache.commons.collections"><code>Bag</code></a> and 
+<a href="../../../../../org/apache/commons/collections/SortedBag.html" title="interface in org.apache.commons.collections"><code>SortedBag</code></a> interfaces.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.buffer">org.apache.commons.collections.buffer</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the
+<a href="../../../../../org/apache/commons/collections/Buffer.html" title="interface in org.apache.commons.collections"><code>Buffer</code></a> interface.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.collection">org.apache.commons.collections.collection</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> interface.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.comparators">org.apache.commons.collections.comparators</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util"><code>Comparator</code></a> interface.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.functors">org.apache.commons.collections.functors</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the
+<a href="../../../../../org/apache/commons/collections/Closure.html" title="interface in org.apache.commons.collections"><code>Closure</code></a>,
+<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections"><code>Predicate</code></a>,
+<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections"><code>Transformer</code></a> and
+<a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections"><code>Factory</code></a> interfaces.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.iterators">org.apache.commons.collections.iterators</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util"><code>Iterator</code></a> interface.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.list">org.apache.commons.collections.list</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> interface.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.map">org.apache.commons.collections.map</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the 
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>,
+<a href="../../../../../org/apache/commons/collections/IterableMap.html" title="interface in org.apache.commons.collections"><code>IterableMap</code></a>,
+<a href="../../../../../org/apache/commons/collections/OrderedMap.html" title="interface in org.apache.commons.collections"><code>OrderedMap</code></a> and
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util"><code>SortedMap</code></a> interfaces.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.commons.collections.set">org.apache.commons.collections.set</a></td>
+<td class="colLast">
+<div class="block">
+This package contains implementations of the
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> and
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util"><code>SortedSet</code></a> interfaces.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.apache.commons.collections">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/package-summary.html">org.apache.commons.collections</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/package-summary.html">org.apache.commons.collections</a> that return <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#asTransformer(org.apache.commons.collections.Closure)">asTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Closure.html" title="interface in org.apache.commons.collections">Closure</a>&nbsp;closure)</code>
+<div class="block">Creates a Transformer that calls a Closure each time the transformer is used.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#asTransformer(org.apache.commons.collections.Factory)">asTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections">Factory</a>&nbsp;factory)</code>
+<div class="block">Creates a Transformer that calls a Factory each time the transformer is used.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#asTransformer(org.apache.commons.collections.Predicate)">asTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>&nbsp;predicate)</code>
+<div class="block">Creates a Transformer that calls a Predicate each time the transformer is used.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#chainedTransformer(java.util.Collection)">chainedTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;transformers)</code>
+<div class="block">Create a new Transformer that calls each transformer in turn, passing the 
+ result into the next transformer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#chainedTransformer(org.apache.commons.collections.Transformer[])">chainedTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers)</code>
+<div class="block">Create a new Transformer that calls each transformer in turn, passing the 
+ result into the next transformer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#chainedTransformer(org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">chainedTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer1,
+                  <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer2)</code>
+<div class="block">Create a new Transformer that calls two transformers, passing the result of
+ the first into the second.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#cloneTransformer()">cloneTransformer</a></strong>()</code>
+<div class="block">Gets a transformer that returns a clone of the input
+ object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#constantTransformer(java.lang.Object)">constantTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;constantToReturn)</code>
+<div class="block">Creates a Transformer that will return the same object each time the 
+ transformer is used.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#exceptionTransformer()">exceptionTransformer</a></strong>()</code>
+<div class="block">Gets a transformer that always throws an exception.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">BeanMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/BeanMap.html#getTypeTransformer(java.lang.Class)">getTypeTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;aType)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+<div class="block">Returns a transformer for the given primitive type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#instantiateTransformer()">instantiateTransformer</a></strong>()</code>
+<div class="block">Gets a Transformer that expects an input Class object that it will instantiate.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#instantiateTransformer(java.lang.Class[],%20java.lang.Object[])">instantiateTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;paramTypes,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;args)</code>
+<div class="block">Creates a Transformer that expects an input Class object that it will 
+ instantiate.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#invokerTransformer(java.lang.String)">invokerTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;methodName)</code>
+<div class="block">Gets a Transformer that invokes a method on the input object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#invokerTransformer(java.lang.String,%20java.lang.Class[],%20java.lang.Object[])">invokerTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;methodName,
+                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;paramTypes,
+                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;args)</code>
+<div class="block">Gets a Transformer that invokes a method on the input object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#mapTransformer(java.util.Map)">mapTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map)</code>
+<div class="block">Creates a Transformer that uses the passed in Map to transform the input 
+ object (as a simple lookup).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#nopTransformer()">nopTransformer</a></strong>()</code>
+<div class="block">Gets a transformer that returns the input object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#nullTransformer()">nullTransformer</a></strong>()</code>
+<div class="block">Gets a transformer that always returns null.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#stringValueTransformer()">stringValueTransformer</a></strong>()</code>
+<div class="block">Gets a transformer that returns a <code>java.lang.String</code>
+ representation of the input object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchMapTransformer(java.util.Map)">switchMapTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;objectsAndTransformers)</code>
+<div class="block">Create a new Transformer that uses the input object as a key to find the
+ transformer to call.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchTransformer(java.util.Map)">switchTransformer</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;predicatesAndTransformers)</code>
+<div class="block">Create a new Transformer that calls one of the transformers depending 
+ on the predicates.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchTransformer(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[])">switchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers)</code>
+<div class="block">Create a new Transformer that calls one of the transformers depending 
+ on the predicates.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchTransformer(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[],%20org.apache.commons.collections.Transformer)">switchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;defaultTransformer)</code>
+<div class="block">Create a new Transformer that calls one of the transformers depending 
+ on the predicates.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchTransformer(org.apache.commons.collections.Predicate,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">switchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>&nbsp;predicate,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;trueTransformer,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;falseTransformer)</code>
+<div class="block">Create a new Transformer that calls one of two transformers depending 
+ on the specified predicate.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/package-summary.html">org.apache.commons.collections</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Closure.html" title="interface in org.apache.commons.collections">Closure</a></code></td>
+<td class="colLast"><span class="strong">ClosureUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/ClosureUtils.html#asClosure(org.apache.commons.collections.Transformer)">asClosure</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Creates a Closure that calls a Transformer each time it is called.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a></code></td>
+<td class="colLast"><span class="strong">PredicateUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/PredicateUtils.html#asPredicate(org.apache.commons.collections.Transformer)">asPredicate</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Create a new Predicate that wraps a Transformer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#chainedTransformer(org.apache.commons.collections.Transformer[])">chainedTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers)</code>
+<div class="block">Create a new Transformer that calls each transformer in turn, passing the 
+ result into the next transformer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#chainedTransformer(org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">chainedTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer1,
+                  <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer2)</code>
+<div class="block">Create a new Transformer that calls two transformers, passing the result of
+ the first into the second.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
+<td class="colLast"><span class="strong">CollectionUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/CollectionUtils.html#collect(java.util.Collection,%20org.apache.commons.collections.Transformer)">collect</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;inputCollection,
+       <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Returns a new Collection consisting of the elements of inputCollection transformed
+ by the given transformer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
+<td class="colLast"><span class="strong">CollectionUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/CollectionUtils.html#collect(java.util.Collection,%20org.apache.commons.collections.Transformer,%20java.util.Collection)">collect</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;inputCollection,
+       <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer,
+       <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;outputCollection)</code>
+<div class="block">Transforms all elements from inputCollection with the given transformer 
+ and adds them to the outputCollection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
+<td class="colLast"><span class="strong">CollectionUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/CollectionUtils.html#collect(java.util.Iterator,%20org.apache.commons.collections.Transformer)">collect</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&nbsp;inputIterator,
+       <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Transforms all elements from the inputIterator with the given transformer 
+ and adds them to the outputCollection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
+<td class="colLast"><span class="strong">CollectionUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/CollectionUtils.html#collect(java.util.Iterator,%20org.apache.commons.collections.Transformer,%20java.util.Collection)">collect</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&nbsp;inputIterator,
+       <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer,
+       <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;outputCollection)</code>
+<div class="block">Transforms all elements from the inputIterator with the given transformer 
+ and adds them to the outputCollection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colLast"><span class="strong">MapUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/MapUtils.html#lazyMap(java.util.Map,%20org.apache.commons.collections.Transformer)">lazyMap</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map,
+       <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformerFactory)</code>
+<div class="block">Returns a "lazy" map whose values will be created on demand.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a></code></td>
+<td class="colLast"><span class="strong">MapUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/MapUtils.html#lazySortedMap(java.util.SortedMap,%20org.apache.commons.collections.Transformer)">lazySortedMap</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&nbsp;map,
+             <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformerFactory)</code>
+<div class="block">Returns a "lazy" sorted map whose values will be created on demand.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a></code></td>
+<td class="colLast"><span class="strong">IteratorUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/IteratorUtils.html#objectGraphIterator(java.lang.Object,%20org.apache.commons.collections.Transformer)">objectGraphIterator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;root,
+                   <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Gets an iterator that operates over an object graph.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchTransformer(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[])">switchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers)</code>
+<div class="block">Create a new Transformer that calls one of the transformers depending 
+ on the predicates.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchTransformer(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[],%20org.apache.commons.collections.Transformer)">switchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;defaultTransformer)</code>
+<div class="block">Create a new Transformer that calls one of the transformers depending 
+ on the predicates.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchTransformer(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[],%20org.apache.commons.collections.Transformer)">switchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;defaultTransformer)</code>
+<div class="block">Create a new Transformer that calls one of the transformers depending 
+ on the predicates.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/TransformerUtils.html#switchTransformer(org.apache.commons.collections.Predicate,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">switchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>&nbsp;predicate,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;trueTransformer,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;falseTransformer)</code>
+<div class="block">Create a new Transformer that calls one of two transformers depending 
+ on the specified predicate.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="strong">CollectionUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/CollectionUtils.html#transform(java.util.Collection,%20org.apache.commons.collections.Transformer)">transform</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;collection,
+         <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Transform the collection by applying a Transformer to each element.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Bag.html" title="interface in org.apache.commons.collections">Bag</a></code></td>
+<td class="colLast"><span class="strong">BagUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/BagUtils.html#transformedBag(org.apache.commons.collections.Bag,%20org.apache.commons.collections.Transformer)">transformedBag</a></strong>(<a href="../../../../../org/apache/commons/collections/Bag.html" title="interface in org.apache.commons.collections">Bag</a>&nbsp;bag,
+              <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Returns a transformed bag backed by the given bag.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Buffer.html" title="interface in org.apache.commons.collections">Buffer</a></code></td>
+<td class="colLast"><span class="strong">BufferUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/BufferUtils.html#transformedBuffer(org.apache.commons.collections.Buffer,%20org.apache.commons.collections.Transformer)">transformedBuffer</a></strong>(<a href="../../../../../org/apache/commons/collections/Buffer.html" title="interface in org.apache.commons.collections">Buffer</a>&nbsp;buffer,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Returns a transformed buffer backed by the given buffer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
+<td class="colLast"><span class="strong">CollectionUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/CollectionUtils.html#transformedCollection(java.util.Collection,%20org.apache.commons.collections.Transformer)">transformedCollection</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;collection,
+                     <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Returns a transformed bag backed by the given collection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a></code></td>
+<td class="colLast"><span class="strong">ComparatorUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/ComparatorUtils.html#transformedComparator(java.util.Comparator,%20org.apache.commons.collections.Transformer)">transformedComparator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&nbsp;comparator,
+                     <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Gets a Comparator that passes transformed objects to the given comparator.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a></code></td>
+<td class="colLast"><span class="strong">IteratorUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/IteratorUtils.html#transformedIterator(java.util.Iterator,%20org.apache.commons.collections.Transformer)">transformedIterator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&nbsp;iterator,
+                   <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transform)</code>
+<div class="block">Gets an iterator that transforms the elements of another iterator.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
+<td class="colLast"><span class="strong">ListUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/ListUtils.html#transformedList(java.util.List,%20org.apache.commons.collections.Transformer)">transformedList</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list,
+               <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Returns a transformed list backed by the given list.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colLast"><span class="strong">MapUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/MapUtils.html#transformedMap(java.util.Map,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">transformedMap</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map,
+              <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;keyTransformer,
+              <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;valueTransformer)</code>
+<div class="block">Returns a transformed map backed by the given map.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a></code></td>
+<td class="colLast"><span class="strong">PredicateUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/PredicateUtils.html#transformedPredicate(org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Predicate)">transformedPredicate</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer,
+                    <a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>&nbsp;predicate)</code>
+<div class="block">Creates a predicate that transforms the input object before passing it
+ to the predicate.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a></code></td>
+<td class="colLast"><span class="strong">SetUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/SetUtils.html#transformedSet(java.util.Set,%20org.apache.commons.collections.Transformer)">transformedSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&nbsp;set,
+              <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Returns a transformed set backed by the given set.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/SortedBag.html" title="interface in org.apache.commons.collections">SortedBag</a></code></td>
+<td class="colLast"><span class="strong">BagUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/BagUtils.html#transformedSortedBag(org.apache.commons.collections.SortedBag,%20org.apache.commons.collections.Transformer)">transformedSortedBag</a></strong>(<a href="../../../../../org/apache/commons/collections/SortedBag.html" title="interface in org.apache.commons.collections">SortedBag</a>&nbsp;bag,
+                    <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Returns a transformed sorted bag backed by the given bag.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a></code></td>
+<td class="colLast"><span class="strong">MapUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/MapUtils.html#transformedSortedMap(java.util.SortedMap,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">transformedSortedMap</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&nbsp;map,
+                    <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;keyTransformer,
+                    <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;valueTransformer)</code>
+<div class="block">Returns a transformed sorted map backed by the given map.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a></code></td>
+<td class="colLast"><span class="strong">SetUtils.</span><code><strong><a href="../../../../../org/apache/commons/collections/SetUtils.html#transformedSortedSet(java.util.SortedSet,%20org.apache.commons.collections.Transformer)">transformedSortedSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&nbsp;set,
+                    <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Returns a transformed sorted set backed by the given set.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.bag">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/bag/package-summary.html">org.apache.commons.collections.bag</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/bag/package-summary.html">org.apache.commons.collections.bag</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Bag.html" title="interface in org.apache.commons.collections">Bag</a></code></td>
+<td class="colLast"><span class="strong">TransformedBag.</span><code><strong><a href="../../../../../org/apache/commons/collections/bag/TransformedBag.html#decorate(org.apache.commons.collections.Bag,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="../../../../../org/apache/commons/collections/Bag.html" title="interface in org.apache.commons.collections">Bag</a>&nbsp;bag,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory method to create a transforming bag.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/SortedBag.html" title="interface in org.apache.commons.collections">SortedBag</a></code></td>
+<td class="colLast"><span class="strong">TransformedSortedBag.</span><code><strong><a href="../../../../../org/apache/commons/collections/bag/TransformedSortedBag.html#decorate(org.apache.commons.collections.SortedBag,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="../../../../../org/apache/commons/collections/SortedBag.html" title="interface in org.apache.commons.collections">SortedBag</a>&nbsp;bag,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory method to create a transforming sorted bag.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/bag/package-summary.html">org.apache.commons.collections.bag</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/bag/TransformedBag.html#TransformedBag(org.apache.commons.collections.Bag,%20org.apache.commons.collections.Transformer)">TransformedBag</a></strong>(<a href="../../../../../org/apache/commons/collections/Bag.html" title="interface in org.apache.commons.collections">Bag</a>&nbsp;bag,
+              <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/bag/TransformedSortedBag.html#TransformedSortedBag(org.apache.commons.collections.SortedBag,%20org.apache.commons.collections.Transformer)">TransformedSortedBag</a></strong>(<a href="../../../../../org/apache/commons/collections/SortedBag.html" title="interface in org.apache.commons.collections">SortedBag</a>&nbsp;bag,
+                    <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.buffer">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/buffer/package-summary.html">org.apache.commons.collections.buffer</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/buffer/package-summary.html">org.apache.commons.collections.buffer</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Buffer.html" title="interface in org.apache.commons.collections">Buffer</a></code></td>
+<td class="colLast"><span class="strong">TransformedBuffer.</span><code><strong><a href="../../../../../org/apache/commons/collections/buffer/TransformedBuffer.html#decorate(org.apache.commons.collections.Buffer,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="../../../../../org/apache/commons/collections/Buffer.html" title="interface in org.apache.commons.collections">Buffer</a>&nbsp;buffer,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory method to create a transforming buffer.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/buffer/package-summary.html">org.apache.commons.collections.buffer</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/buffer/TransformedBuffer.html#TransformedBuffer(org.apache.commons.collections.Buffer,%20org.apache.commons.collections.Transformer)">TransformedBuffer</a></strong>(<a href="../../../../../org/apache/commons/collections/Buffer.html" title="interface in org.apache.commons.collections">Buffer</a>&nbsp;buffer,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.collection">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/collection/package-summary.html">org.apache.commons.collections.collection</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../org/apache/commons/collections/collection/package-summary.html">org.apache.commons.collections.collection</a> declared as <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformedCollection.</span><code><strong><a href="../../../../../org/apache/commons/collections/collection/TransformedCollection.html#transformer">transformer</a></strong></code>
+<div class="block">The transformer to use</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/collection/package-summary.html">org.apache.commons.collections.collection</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
+<td class="colLast"><span class="strong">TransformedCollection.</span><code><strong><a href="../../../../../org/apache/commons/collections/collection/TransformedCollection.html#decorate(java.util.Collection,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;coll,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory method to create a transforming collection.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/collection/package-summary.html">org.apache.commons.collections.collection</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/collection/TransformedCollection.html#TransformedCollection(java.util.Collection,%20org.apache.commons.collections.Transformer)">TransformedCollection</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;coll,
+                     <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.comparators">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/comparators/package-summary.html">org.apache.commons.collections.comparators</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../org/apache/commons/collections/comparators/package-summary.html">org.apache.commons.collections.comparators</a> declared as <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformingComparator.</span><code><strong><a href="../../../../../org/apache/commons/collections/comparators/TransformingComparator.html#transformer">transformer</a></strong></code>
+<div class="block">The transformer being used.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/comparators/package-summary.html">org.apache.commons.collections.comparators</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/comparators/TransformingComparator.html#TransformingComparator(org.apache.commons.collections.Transformer)">TransformingComparator</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructs an instance with the given Transformer and a 
+ <a href="../../../../../org/apache/commons/collections/comparators/ComparableComparator.html" title="class in org.apache.commons.collections.comparators"><code>ComparableComparator</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/comparators/TransformingComparator.html#TransformingComparator(org.apache.commons.collections.Transformer,%20java.util.Comparator)">TransformingComparator</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&nbsp;decorated)</code>
+<div class="block">Constructs an instance with the given Transformer and Comparator.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.functors">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/functors/package-summary.html">org.apache.commons.collections.functors</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../org/apache/commons/collections/functors/package-summary.html">org.apache.commons.collections.functors</a> that implement <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/ChainedTransformer.html" title="class in org.apache.commons.collections.functors">ChainedTransformer</a></strong></code>
+<div class="block">Transformer implementation that chains the specified transformers together.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/CloneTransformer.html" title="class in org.apache.commons.collections.functors">CloneTransformer</a></strong></code>
+<div class="block">Transformer implementation that returns a clone of the input object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/ClosureTransformer.html" title="class in org.apache.commons.collections.functors">ClosureTransformer</a></strong></code>
+<div class="block">Transformer implementation that calls a Closure using the input object
+ and then returns the input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/ConstantTransformer.html" title="class in org.apache.commons.collections.functors">ConstantTransformer</a></strong></code>
+<div class="block">Transformer implementation that returns the same constant each time.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/ExceptionTransformer.html" title="class in org.apache.commons.collections.functors">ExceptionTransformer</a></strong></code>
+<div class="block">Transformer implementation that always throws an exception.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/FactoryTransformer.html" title="class in org.apache.commons.collections.functors">FactoryTransformer</a></strong></code>
+<div class="block">Transformer implementation that calls a Factory and returns the result.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/InstantiateTransformer.html" title="class in org.apache.commons.collections.functors">InstantiateTransformer</a></strong></code>
+<div class="block">Transformer implementation that creates a new object instance by reflection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/InvokerTransformer.html" title="class in org.apache.commons.collections.functors">InvokerTransformer</a></strong></code>
+<div class="block">Transformer implementation that creates a new object instance by reflection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/MapTransformer.html" title="class in org.apache.commons.collections.functors">MapTransformer</a></strong></code>
+<div class="block">Transformer implementation that returns the value held in a specified map
+ using the input parameter as a key.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/NOPTransformer.html" title="class in org.apache.commons.collections.functors">NOPTransformer</a></strong></code>
+<div class="block">Transformer implementation that does nothing.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/PredicateTransformer.html" title="class in org.apache.commons.collections.functors">PredicateTransformer</a></strong></code>
+<div class="block">Transformer implementation that calls a Predicate using the input object
+ and then returns the input.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/StringValueTransformer.html" title="class in org.apache.commons.collections.functors">StringValueTransformer</a></strong></code>
+<div class="block">Transformer implementation that returns the result of calling
+ <code>String.valueOf</code> on the input object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html" title="class in org.apache.commons.collections.functors">SwitchTransformer</a></strong></code>
+<div class="block">Transformer implementation calls the transformer whose predicate returns true,
+ like a switch statement.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../org/apache/commons/collections/functors/package-summary.html">org.apache.commons.collections.functors</a> declared as <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">StringValueTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/StringValueTransformer.html#INSTANCE">INSTANCE</a></strong></code>
+<div class="block">Singleton predicate instance</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">CloneTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/CloneTransformer.html#INSTANCE">INSTANCE</a></strong></code>
+<div class="block">Singleton predicate instance</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ExceptionTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ExceptionTransformer.html#INSTANCE">INSTANCE</a></strong></code>
+<div class="block">Singleton predicate instance</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">NOPTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/NOPTransformer.html#INSTANCE">INSTANCE</a></strong></code>
+<div class="block">Singleton predicate instance</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">InstantiateTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/InstantiateTransformer.html#NO_ARG_INSTANCE">NO_ARG_INSTANCE</a></strong></code>
+<div class="block">Singleton instance that uses the no arg constructor</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ConstantTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ConstantTransformer.html#NULL_INSTANCE">NULL_INSTANCE</a></strong></code>
+<div class="block">Returns null each time</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/functors/package-summary.html">org.apache.commons.collections.functors</a> that return <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">SwitchTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html#getDefaultTransformer()">getDefaultTransformer</a></strong>()</code>
+<div class="block">Gets the default transformer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">StringValueTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/StringValueTransformer.html#getInstance()">getInstance</a></strong>()</code>
+<div class="block">Factory returning the singleton instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">CloneTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/CloneTransformer.html#getInstance()">getInstance</a></strong>()</code>
+<div class="block">Factory returning the singleton instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ExceptionTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ExceptionTransformer.html#getInstance()">getInstance</a></strong>()</code>
+<div class="block">Factory returning the singleton instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">NOPTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/NOPTransformer.html#getInstance()">getInstance</a></strong>()</code>
+<div class="block">Factory returning the singleton instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">InstantiateTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/InstantiateTransformer.html#getInstance(java.lang.Class[],%20java.lang.Object[])">getInstance</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;paramTypes,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;args)</code>
+<div class="block">Transformer method that performs validation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ClosureTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ClosureTransformer.html#getInstance(org.apache.commons.collections.Closure)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Closure.html" title="interface in org.apache.commons.collections">Closure</a>&nbsp;closure)</code>
+<div class="block">Factory method that performs validation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ChainedTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ChainedTransformer.html#getInstance(java.util.Collection)">getInstance</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;transformers)</code>
+<div class="block">Create a new Transformer that calls each transformer in turn, passing the 
+ result into the next transformer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">FactoryTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/FactoryTransformer.html#getInstance(org.apache.commons.collections.Factory)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections">Factory</a>&nbsp;factory)</code>
+<div class="block">Factory method that performs validation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">SwitchTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html#getInstance(java.util.Map)">getInstance</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;predicatesAndTransformers)</code>
+<div class="block">Create a new Transformer that calls one of the transformers depending 
+ on the predicates.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">MapTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/MapTransformer.html#getInstance(java.util.Map)">getInstance</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map)</code>
+<div class="block">Factory to create the transformer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ConstantTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ConstantTransformer.html#getInstance(java.lang.Object)">getInstance</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;constantToReturn)</code>
+<div class="block">Transformer method that performs validation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">PredicateTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/PredicateTransformer.html#getInstance(org.apache.commons.collections.Predicate)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>&nbsp;predicate)</code>
+<div class="block">Factory method that performs validation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">SwitchTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html#getInstance(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[],%20org.apache.commons.collections.Transformer)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+           <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers,
+           <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;defaultTransformer)</code>
+<div class="block">Factory method that performs validation and copies the parameter arrays.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">InvokerTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/InvokerTransformer.html#getInstance(java.lang.String)">getInstance</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;methodName)</code>
+<div class="block">Gets an instance of this transformer calling a specific method with no arguments.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">InvokerTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/InvokerTransformer.html#getInstance(java.lang.String,%20java.lang.Class[],%20java.lang.Object[])">getInstance</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;methodName,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;paramTypes,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;args)</code>
+<div class="block">Gets an instance of this transformer calling a specific method with specific values.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ChainedTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ChainedTransformer.html#getInstance(org.apache.commons.collections.Transformer[])">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers)</code>
+<div class="block">Factory method that performs validation and copies the parameter array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ChainedTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ChainedTransformer.html#getInstance(org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer1,
+           <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer2)</code>
+<div class="block">Factory method that performs validation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerPredicate.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformerPredicate.html#getTransformer()">getTransformer</a></strong>()</code>
+<div class="block">Gets the transformer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformerClosure.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformerClosure.html#getTransformer()">getTransformer</a></strong>()</code>
+<div class="block">Gets the transformer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformedPredicate.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformedPredicate.html#getTransformer()">getTransformer</a></strong>()</code>
+<div class="block">Gets the transformer in use.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]</code></td>
+<td class="colLast"><span class="strong">SwitchTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html#getTransformers()">getTransformers</a></strong>()</code>
+<div class="block">Gets the transformers, do not modify the array.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]</code></td>
+<td class="colLast"><span class="strong">ChainedTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ChainedTransformer.html#getTransformers()">getTransformers</a></strong>()</code>
+<div class="block">Gets the transformers, do not modify the array.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/functors/package-summary.html">org.apache.commons.collections.functors</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">SwitchTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html#getInstance(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[],%20org.apache.commons.collections.Transformer)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+           <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers,
+           <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;defaultTransformer)</code>
+<div class="block">Factory method that performs validation and copies the parameter arrays.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">SwitchTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html#getInstance(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[],%20org.apache.commons.collections.Transformer)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+           <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers,
+           <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;defaultTransformer)</code>
+<div class="block">Factory method that performs validation and copies the parameter arrays.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a></code></td>
+<td class="colLast"><span class="strong">TransformerPredicate.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformerPredicate.html#getInstance(org.apache.commons.collections.Transformer)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory to create the predicate.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Closure.html" title="interface in org.apache.commons.collections">Closure</a></code></td>
+<td class="colLast"><span class="strong">TransformerClosure.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformerClosure.html#getInstance(org.apache.commons.collections.Transformer)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory method that performs validation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ChainedTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ChainedTransformer.html#getInstance(org.apache.commons.collections.Transformer[])">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers)</code>
+<div class="block">Factory method that performs validation and copies the parameter array.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a></code></td>
+<td class="colLast"><span class="strong">TransformedPredicate.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformedPredicate.html#getInstance(org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Predicate)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer,
+           <a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>&nbsp;predicate)</code>
+<div class="block">Factory to create the predicate.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ChainedTransformer.</span><code><strong><a href="../../../../../org/apache/commons/collections/functors/ChainedTransformer.html#getInstance(org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">getInstance</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer1,
+           <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer2)</code>
+<div class="block">Factory method that performs validation.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/functors/package-summary.html">org.apache.commons.collections.functors</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/ChainedTransformer.html#ChainedTransformer(org.apache.commons.collections.Transformer[])">ChainedTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers)</code>
+<div class="block">Constructor that performs no validation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html#SwitchTransformer(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[],%20org.apache.commons.collections.Transformer)">SwitchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;defaultTransformer)</code>
+<div class="block">Constructor that performs no validation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/SwitchTransformer.html#SwitchTransformer(org.apache.commons.collections.Predicate[],%20org.apache.commons.collections.Transformer[],%20org.apache.commons.collections.Transformer)">SwitchTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>[]&nbsp;predicates,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>[]&nbsp;transformers,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;defaultTransformer)</code>
+<div class="block">Constructor that performs no validation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformedPredicate.html#TransformedPredicate(org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Predicate)">TransformedPredicate</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer,
+                    <a href="../../../../../org/apache/commons/collections/Predicate.html" title="interface in org.apache.commons.collections">Predicate</a>&nbsp;predicate)</code>
+<div class="block">Constructor that performs no validation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformerClosure.html#TransformerClosure(org.apache.commons.collections.Transformer)">TransformerClosure</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that performs no validation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/functors/TransformerPredicate.html#TransformerPredicate(org.apache.commons.collections.Transformer)">TransformerPredicate</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that performs no validation.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.iterators">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/iterators/package-summary.html">org.apache.commons.collections.iterators</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../org/apache/commons/collections/iterators/package-summary.html">org.apache.commons.collections.iterators</a> declared as <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">ObjectGraphIterator.</span><code><strong><a href="../../../../../org/apache/commons/collections/iterators/ObjectGraphIterator.html#transformer">transformer</a></strong></code>
+<div class="block">The transformer to use</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/iterators/package-summary.html">org.apache.commons.collections.iterators</a> that return <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformIterator.</span><code><strong><a href="../../../../../org/apache/commons/collections/iterators/TransformIterator.html#getTransformer()">getTransformer</a></strong>()</code>
+<div class="block">Gets the transformer this iterator is using.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/iterators/package-summary.html">org.apache.commons.collections.iterators</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">TransformIterator.</span><code><strong><a href="../../../../../org/apache/commons/collections/iterators/TransformIterator.html#setTransformer(org.apache.commons.collections.Transformer)">setTransformer</a></strong>(<a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Sets the transformer this the iterator to use.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/iterators/package-summary.html">org.apache.commons.collections.iterators</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/iterators/ObjectGraphIterator.html#ObjectGraphIterator(java.lang.Object,%20org.apache.commons.collections.Transformer)">ObjectGraphIterator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;root,
+                   <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructs an ObjectGraphIterator using a root object and transformer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/iterators/TransformIterator.html#TransformIterator(java.util.Iterator,%20org.apache.commons.collections.Transformer)">TransformIterator</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&nbsp;iterator,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructs a new <code>TransformIterator</code> that will use the
+ given iterator and transformer.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.list">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/list/package-summary.html">org.apache.commons.collections.list</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/list/package-summary.html">org.apache.commons.collections.list</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
+<td class="colLast"><span class="strong">TransformedList.</span><code><strong><a href="../../../../../org/apache/commons/collections/list/TransformedList.html#decorate(java.util.List,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory method to create a transforming list.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/list/package-summary.html">org.apache.commons.collections.list</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/list/TransformedList.html#TransformedList(java.util.List,%20org.apache.commons.collections.Transformer)">TransformedList</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list,
+               <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.map">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/map/package-summary.html">org.apache.commons.collections.map</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../org/apache/commons/collections/map/package-summary.html">org.apache.commons.collections.map</a> declared as <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">LazyMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/LazyMap.html#factory">factory</a></strong></code>
+<div class="block">The factory to use to construct elements</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformedMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/TransformedMap.html#keyTransformer">keyTransformer</a></strong></code>
+<div class="block">The transformer to use for the key</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></code></td>
+<td class="colLast"><span class="strong">TransformedMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/TransformedMap.html#valueTransformer">valueTransformer</a></strong></code>
+<div class="block">The transformer to use for the value</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/map/package-summary.html">org.apache.commons.collections.map</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colLast"><span class="strong">DefaultedMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/DefaultedMap.html#decorate(java.util.Map,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;factory)</code>
+<div class="block">Factory method to create a defaulting map.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colLast"><span class="strong">LazyMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/LazyMap.html#decorate(java.util.Map,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;factory)</code>
+<div class="block">Factory method to create a lazily instantiated map.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colLast"><span class="strong">TransformedMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/TransformedMap.html#decorate(java.util.Map,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;keyTransformer,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;valueTransformer)</code>
+<div class="block">Factory method to create a transforming map.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a></code></td>
+<td class="colLast"><span class="strong">LazySortedMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/LazySortedMap.html#decorate(java.util.SortedMap,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&nbsp;map,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;factory)</code>
+<div class="block">Factory method to create a lazily instantiated sorted map.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a></code></td>
+<td class="colLast"><span class="strong">TransformedSortedMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/TransformedSortedMap.html#decorate(java.util.SortedMap,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&nbsp;map,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;keyTransformer,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;valueTransformer)</code>
+<div class="block">Factory method to create a transforming sorted map.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colLast"><span class="strong">TransformedMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/TransformedMap.html#decorateTransform(java.util.Map,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">decorateTransform</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;keyTransformer,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;valueTransformer)</code>
+<div class="block">Factory method to create a transforming map that will transform
+ existing contents of the specified map.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a></code></td>
+<td class="colLast"><span class="strong">TransformedSortedMap.</span><code><strong><a href="../../../../../org/apache/commons/collections/map/TransformedSortedMap.html#decorateTransform(java.util.SortedMap,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">decorateTransform</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&nbsp;map,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;keyTransformer,
+                 <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;valueTransformer)</code>
+<div class="block">Factory method to create a transforming sorted map that will transform
+ existing contents of the specified map.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/map/package-summary.html">org.apache.commons.collections.map</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/map/LazyMap.html#LazyMap(java.util.Map,%20org.apache.commons.collections.Transformer)">LazyMap</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map,
+       <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;factory)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/map/LazySortedMap.html#LazySortedMap(java.util.SortedMap,%20org.apache.commons.collections.Transformer)">LazySortedMap</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&nbsp;map,
+             <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;factory)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/map/TransformedMap.html#TransformedMap(java.util.Map,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">TransformedMap</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;map,
+              <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;keyTransformer,
+              <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;valueTransformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/map/TransformedSortedMap.html#TransformedSortedMap(java.util.SortedMap,%20org.apache.commons.collections.Transformer,%20org.apache.commons.collections.Transformer)">TransformedSortedMap</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&nbsp;map,
+                    <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;keyTransformer,
+                    <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;valueTransformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.commons.collections.set">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a> in <a href="../../../../../org/apache/commons/collections/set/package-summary.html">org.apache.commons.collections.set</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/commons/collections/set/package-summary.html">org.apache.commons.collections.set</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a></code></td>
+<td class="colLast"><span class="strong">TransformedSet.</span><code><strong><a href="../../../../../org/apache/commons/collections/set/TransformedSet.html#decorate(java.util.Set,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&nbsp;set,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory method to create a transforming set.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a></code></td>
+<td class="colLast"><span class="strong">TransformedSortedSet.</span><code><strong><a href="../../../../../org/apache/commons/collections/set/TransformedSortedSet.html#decorate(java.util.SortedSet,%20org.apache.commons.collections.Transformer)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&nbsp;set,
+        <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Factory method to create a transforming sorted set.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/commons/collections/set/package-summary.html">org.apache.commons.collections.set</a> with parameters of type <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/set/TransformedSet.html#TransformedSet(java.util.Set,%20org.apache.commons.collections.Transformer)">TransformedSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&nbsp;set,
+              <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/set/TransformedSortedSet.html#TransformedSortedSet(java.util.SortedSet,%20org.apache.commons.collections.Transformer)">TransformedSortedSet</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</a>&nbsp;set,
+                    <a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Transformer</a>&nbsp;transformer)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../org/apache/commons/collections/Transformer.html" title="interface in org.apache.commons.collections">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/collections/class-use/Transformer.html" target="_top">Frames</a></li>
+<li><a href="Transformer.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2015 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
+<title>LazyList (Apache Commons Collections 3.2.2 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="LazyList (Apache Commons Collections 3.2.2 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/LazyList.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/collections/list/GrowthList.html" title="class in org.apache.commons.collections.list"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/collections/list/NodeCachingLinkedList.html" title="class in org.apache.commons.collections.list"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/collections/list/LazyList.html" target="_top">Frames</a></li>
+<li><a href="LazyList.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.commons.collections.list</div>
+<h2 title="Class LazyList" class="title">Class LazyList</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html" title="class in org.apache.commons.collections.collection">org.apache.commons.collections.collection.AbstractCollectionDecorator</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html" title="class in org.apache.commons.collections.list">org.apache.commons.collections.list.AbstractListDecorator</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/commons/collections/list/AbstractSerializableListDecorator.html" title="class in org.apache.commons.collections.list">org.apache.commons.collections.list.AbstractSerializableListDecorator</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.commons.collections.list.LazyList</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">LazyList</span>
+extends <a href="../../../../../org/apache/commons/collections/list/AbstractSerializableListDecorator.html" title="class in org.apache.commons.collections.list">AbstractSerializableListDecorator</a></pre>
+<div class="block">Decorates another <code>List</code> to create objects in the list on demand.
+ <p>
+ When the <a href="../../../../../org/apache/commons/collections/list/LazyList.html#get(int)"><code>get(int)</code></a> method is called with an index greater than
+ the size of the list, the list will automatically grow in size and return
+ a new object from the specified factory. The gaps will be filled by null.
+ If a get method call encounters a null, it will be replaced with a new
+ object from the factory. Thus this list is unsuitable for storing null
+ objects.
+ <p>
+ For instance:
+
+ <pre>
+ Factory factory = new Factory() {
+     public Object create() {
+         return new Date();
+     }
+ }
+ List lazy = LazyList.decorate(new ArrayList(), factory);
+ Object obj = lazy.get(3);
+ </pre>
+
+ After the above code is executed, <code>obj</code> will contain
+ a new <code>Date</code> instance.  Furthermore, that <code>Date</code>
+ instance is the fourth element in the list.  The first, second, 
+ and third element are all set to <code>null</code>.
+ <p>
+ This class differs from <a href="../../../../../org/apache/commons/collections/list/GrowthList.html" title="class in org.apache.commons.collections.list"><code>GrowthList</code></a> because here growth occurs on
+ get, where <code>GrowthList</code> grows on set and add. However, they
+ could easily be used together by decorating twice.
+ <p>
+ This class is Serializable from Commons Collections 3.1.</div>
+<dl><dt><span class="strong">Since:</span></dt>
+  <dd>Commons Collections 3.0</dd>
+<dt><span class="strong">Version:</span></dt>
+  <dd>$Revision: 646777 $ $Date: 2008-04-10 14:33:15 +0200 (Thu, 10 Apr 2008) $</dd>
+<dt><span class="strong">Author:</span></dt>
+  <dd>Stephen Colebourne, Arron Bates, Paul Jack</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/commons/collections/list/GrowthList.html" title="class in org.apache.commons.collections.list"><code>GrowthList</code></a>, 
+<a href="../../../../../serialized-form.html#org.apache.commons.collections.list.LazyList">Serialized Form</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections">Factory</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/list/LazyList.html#factory">factory</a></strong></code>
+<div class="block">The factory to use to lazily instantiate the objects</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.apache.commons.collections.collection.AbstractCollectionDecorator">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.apache.commons.collections.collection.<a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html" title="class in org.apache.commons.collections.collection">AbstractCollectionDecorator</a></h3>
+<code><a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#collection">collection</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/list/LazyList.html#LazyList(java.util.List,%20org.apache.commons.collections.Factory)">LazyList</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list,
+        <a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections">Factory</a>&nbsp;factory)</code>
+<div class="block">Constructor that wraps (not copies).</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/list/LazyList.html#decorate(java.util.List,%20org.apache.commons.collections.Factory)">decorate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list,
+        <a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections">Factory</a>&nbsp;factory)</code>
+<div class="block">Factory method to create a lazily instantiating list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/list/LazyList.html#get(int)">get</a></strong>(int&nbsp;index)</code>
+<div class="block">Decorate the get method to perform the lazy behaviour.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/commons/collections/list/LazyList.html#subList(int,%20int)">subList</a></strong>(int&nbsp;fromIndex,
+       int&nbsp;toIndex)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.commons.collections.list.AbstractListDecorator">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.commons.collections.list.<a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html" title="class in org.apache.commons.collections.list">AbstractListDecorator</a></h3>
+<code><a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#add(int,%20java.lang.Object)">add</a>, <a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#addAll(int,%20java.util.Collection)">addAll</a>, <a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#getList()">getList</a>, <a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#indexOf(java.lang.Object)">indexOf</a>, <a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#lastIndexOf(java.lang.Object)">lastIndexOf</a>, <a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#listIterator()">listIterator</a>, <a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#listIterator(int)">listIterator</a>, <a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#remove(int)">remove</a>, <a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#set(int,%20java.lang.Object)">set</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.commons.collections.collection.AbstractCollectionDecorator">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.commons.collections.collection.<a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html" title="class in org.apache.commons.collections.collection">AbstractCollectionDecorator</a></h3>
+<code><a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#add(java.lang.Object)">add</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#addAll(java.util.Collection)">addAll</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#clear()">clear</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#contains(java.lang.Object)">contains</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#containsAll(java.util.Collection)">containsAll</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#equals(java.lang.Object)">equals</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#getCollection()">getCollection</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#hashCode()">hashCode</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#isEmpty()">isEmpty</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#iterator()">iterator</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#remove(java.lang.Object)">remove</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#removeAll(java.util.Collection)">removeAll</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#retainAll(java.util.Collection)">retainAll</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#size()">size</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#toArray()">toArray</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#toArray(java.lang.Object[])">toArray</a>, <a href="../../../../../org/apache/commons/collections/collection/AbstractCollectionDecorator.html#toString()">toString</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.util.List">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#add(java.lang.Object)" title="class or interface in java.util">add</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#addAll(java.util.Collection)" title="class or interface in java.util">addAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#clear()" title="class or interface in java.util">clear</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#contains(java.lang.Object)" title="class or interface in java.util">contains</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#containsAll(java.util.Collection)" title="class or interface in java.util">containsAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.util">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#hashCode()" title="class or interface in java.util">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#isEmpty()" title="class or interface in java.util">isEmpty</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#iterator()" title="class or interface in java.util">iterator</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#remove(java.lang.Object)" title="class or interface in java.util">remove</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#removeAll(java.util.Collection)" title="class or interface in java.util">removeAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#retainAll(java.util.Collection)" title="class or interface in java.util">retainAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#size()" title="class or interface in java.util">size</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#toArray()" title="class or interface in java.util">toArray</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#toArray(java.lang.Object[])" title="class or interface in java.util">toArray</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="factory">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>factory</h4>
+<pre>protected final&nbsp;<a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections">Factory</a> factory</pre>
+<div class="block">The factory to use to lazily instantiate the objects</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="LazyList(java.util.List, org.apache.commons.collections.Factory)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>LazyList</h4>
+<pre>protected&nbsp;LazyList(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list,
+        <a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections">Factory</a>&nbsp;factory)</pre>
+<div class="block">Constructor that wraps (not copies).</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>list</code> - the list to decorate, must not be null</dd><dd><code>factory</code> - the factory to use for creation, must not be null</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if list or factory is null</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="decorate(java.util.List, org.apache.commons.collections.Factory)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>decorate</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;decorate(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list,
+            <a href="../../../../../org/apache/commons/collections/Factory.html" title="interface in org.apache.commons.collections">Factory</a>&nbsp;factory)</pre>
+<div class="block">Factory method to create a lazily instantiating list.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>list</code> - the list to decorate, must not be null</dd><dd><code>factory</code> - the factory to use for creation, must not be null</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if list or factory is null</dd></dl>
+</li>
+</ul>
+<a name="get(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;get(int&nbsp;index)</pre>
+<div class="block">Decorate the get method to perform the lazy behaviour.
+ <p>
+ If the requested index is greater than the current size, the list will 
+ grow to the new size and a new object will be returned from the factory.
+ Indexes in-between the old size and the requested size are left with a 
+ placeholder that is replaced with a factory object when requested.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#get(int)" title="class or interface in java.util">get</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#get(int)">get</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html" title="class in org.apache.commons.collections.list">AbstractListDecorator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>index</code> - the index to retrieve</dd></dl>
+</li>
+</ul>
+<a name="subList(int, int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>subList</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;subList(int&nbsp;fromIndex,
+           int&nbsp;toIndex)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true#subList(int,%20int)" title="class or interface in java.util">subList</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html#subList(int,%20int)">subList</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/commons/collections/list/AbstractListDecorator.html" title="class in org.apache.commons.collections.list">AbstractListDecorator</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/LazyList.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/commons/collections/list/GrowthList.html" title="class in org.apache.commons.collections.list"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/commons/collections/list/NodeCachingLinkedList.html" title="class in org.apache.commons.collections.list"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/commons/collections/list/LazyList.html" target="_top">Frames</a></li>
+<li><a href="LazyList.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2001&#x2013;2015 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All rights reserved.</small></p>
+</body>
+</html>
