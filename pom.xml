@@ -30,15 +30,14 @@
         <version>1.8.1</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-<!--        <version>9.2.0</version>-->
-        <version>8.0.33</version>
+<!--     https://mvnrepository.com/artifact/mysql/mysql-connector-java-->
+<!--    <dependency>-->
+<!--        <groupId>mysql</groupId>-->
+<!--        <artifactId>mysql-connector-java</artifactId>-->
+<!--&lt;!&ndash;        <version>9.2.0</version>&ndash;&gt;-->
+<!--        <version>8.0.33</version>-->
 
-    </dependency>
-
+<!--    </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>net.sf.jasperreports</groupId>-->
@@ -47,11 +46,27 @@
 <!--        </dependency>-->
 
 
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections4</artifactId>
-<version>4.4.1</version>
-        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>net.sf.jasperreports</groupId>-->
+<!--            <artifactId>jasperreports</artifactId>-->
+<!--            <version>6.18.1</version>-->
+<!--        </dependency>-->
+
+
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.commons</groupId>-->
+<!--            <artifactId>commons-collections4</artifactId>-->
+<!--<version>4.4.1</version>-->
+<!--        </dependency>-->
+
+
+<!--        <dependency>-->
+<!--            <groupId>commons-logging</groupId>-->
+<!--            <artifactId>commons-logging</artifactId>-->
+<!--            <version>1.2</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 

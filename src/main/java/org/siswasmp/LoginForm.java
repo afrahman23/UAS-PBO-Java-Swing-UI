@@ -59,7 +59,7 @@ loginPanel.add(txtPassword);
                 if (validateLogin(username, password)) {
                     openMainApplication();
                 } else {
-                    JOptionPane.showMessageDialog(LoginForm.this, "Invalid username or password", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(LoginForm.this, "username atau password tidak cocok", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
